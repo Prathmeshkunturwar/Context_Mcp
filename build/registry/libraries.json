@@ -1,0 +1,1437 @@
+[
+    {
+        "id": "/openai/openai-python",
+        "name": "OpenAI Python SDK",
+        "aliases": [
+            "openai",
+            "openai-python",
+            "openai sdk",
+            "gpt",
+            "chatgpt sdk"
+        ],
+        "category": "llm-provider-sdk",
+        "language": "python",
+        "repository": "https://github.com/openai/openai-python",
+        "docsPath": "docs/",
+        "changelogPath": "CHANGELOG.md",
+        "versionSource": "pypi:openai",
+        "docSections": {
+            "streaming": "docs/streaming.md",
+            "tool_use": "docs/function-calling.md",
+            "embeddings": "docs/embeddings.md",
+            "migration_v5": "docs/migration-guide.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "1.0.0",
+                "5.0.0"
+            ],
+            "relatedLibraries": [
+                "/openai/openai-node"
+            ]
+        }
+    },
+    {
+        "id": "/openai/openai-node",
+        "name": "OpenAI Node.js SDK",
+        "aliases": [
+            "openai-node",
+            "openai js",
+            "openai typescript",
+            "openai-js"
+        ],
+        "category": "llm-provider-sdk",
+        "language": "typescript",
+        "repository": "https://github.com/openai/openai-node",
+        "docsPath": "",
+        "changelogPath": "CHANGELOG.md",
+        "versionSource": "npm:openai",
+        "docSections": {
+            "readme": "README.md",
+            "helpers": "helpers.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "4.0.0",
+                "5.0.0"
+            ],
+            "relatedLibraries": [
+                "/openai/openai-python"
+            ]
+        }
+    },
+    {
+        "id": "/anthropic/anthropic-sdk-python",
+        "name": "Anthropic Python SDK",
+        "aliases": [
+            "anthropic",
+            "anthropic-python",
+            "anthropic sdk",
+            "claude sdk",
+            "claude python"
+        ],
+        "category": "llm-provider-sdk",
+        "language": "python",
+        "repository": "https://github.com/anthropics/anthropic-sdk-python",
+        "docsPath": "",
+        "changelogPath": "CHANGELOG.md",
+        "versionSource": "pypi:anthropic",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "0.3.0",
+                "1.0.0"
+            ],
+            "relatedLibraries": [
+                "/anthropic/anthropic-sdk-typescript"
+            ]
+        }
+    },
+    {
+        "id": "/anthropic/anthropic-sdk-typescript",
+        "name": "Anthropic TypeScript SDK",
+        "aliases": [
+            "anthropic-ts",
+            "anthropic typescript",
+            "anthropic node",
+            "claude-ts"
+        ],
+        "category": "llm-provider-sdk",
+        "language": "typescript",
+        "repository": "https://github.com/anthropics/anthropic-sdk-typescript",
+        "docsPath": "",
+        "changelogPath": "CHANGELOG.md",
+        "versionSource": "npm:@anthropic-ai/sdk",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "1.0.0"
+            ],
+            "relatedLibraries": [
+                "/anthropic/anthropic-sdk-python"
+            ]
+        }
+    },
+    {
+        "id": "/langchain-ai/langchain",
+        "name": "LangChain Python",
+        "aliases": [
+            "langchain",
+            "lcel",
+            "langchain python",
+            "langchain-core"
+        ],
+        "category": "agent-framework",
+        "language": "python",
+        "repository": "https://github.com/langchain-ai/langchain",
+        "docsPath": "docs/docs/",
+        "changelogPath": "libs/langchain/CHANGELOG.md",
+        "versionSource": "pypi:langchain",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "0.1.0",
+                "0.2.0",
+                "0.3.0"
+            ],
+            "relatedLibraries": [
+                "/langchain-ai/langchainjs"
+            ]
+        }
+    },
+    {
+        "id": "/langchain-ai/langchainjs",
+        "name": "LangChain.js",
+        "aliases": [
+            "langchainjs",
+            "langchain js",
+            "langchain javascript",
+            "langchain typescript"
+        ],
+        "category": "agent-framework",
+        "language": "typescript",
+        "repository": "https://github.com/langchain-ai/langchainjs",
+        "docsPath": "",
+        "changelogPath": "libs/langchain/CHANGELOG.md",
+        "versionSource": "npm:langchain",
+        "docSections": {
+            "llmchain_source": "libs/langchain-classic/src/chains/llm_chain.ts",
+            "runnables_source": "libs/langchain-core/src/runnables/base.ts",
+            "lcel_concepts": "langchain-core/src/runnables/README.md"
+        },
+        "sourcePaths": {
+            "Runnable": "libs/langchain-core/src/runnables/base.ts",
+            "RunnableSequence": "libs/langchain-core/src/runnables/base.ts",
+            "RunnablePassthrough": "libs/langchain-core/src/runnables/passthrough.ts",
+            "RunnableLambda": "libs/langchain-core/src/runnables/base.ts",
+            "BaseCallbackHandler": "libs/langchain-core/src/callbacks/base.ts",
+            "ChatPromptTemplate": "libs/langchain-core/src/prompts/chat.ts",
+            "StringOutputParser": "libs/langchain-core/src/output_parsers/string.ts",
+            "LLMChain": "libs/langchain-classic/src/chains/llm_chain.ts"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "0.1.0",
+                "0.2.0",
+                "0.3.0"
+            ],
+            "monorepo": true,
+            "packageRoot": "libs/",
+            "relatedLibraries": [
+                "/langchain-ai/langchain"
+            ]
+        }
+    },
+    {
+        "id": "/langchain-ai/langgraph",
+        "name": "LangGraph",
+        "aliases": [
+            "langgraph",
+            "lang graph",
+            "langchain graph"
+        ],
+        "category": "agent-framework",
+        "language": "python",
+        "repository": "https://github.com/langchain-ai/langgraph",
+        "docsPath": "docs/",
+        "changelogPath": "CHANGELOG.md",
+        "versionSource": "pypi:langgraph",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "0.1.0"
+            ],
+            "relatedLibraries": [
+                "/langchain-ai/langchain"
+            ]
+        }
+    },
+    {
+        "id": "/huggingface/transformers",
+        "name": "HuggingFace Transformers",
+        "aliases": [
+            "transformers",
+            "huggingface",
+            "hf transformers",
+            "hugging face"
+        ],
+        "category": "ml-framework",
+        "language": "python",
+        "repository": "https://github.com/huggingface/transformers",
+        "docsPath": "docs/source/en/",
+        "changelogPath": "",
+        "versionSource": "pypi:transformers",
+        "docSections": {
+            "quickstart": "docs/source/en/quickstart.md",
+            "pipeline": "docs/source/en/pipeline_tutorial.md",
+            "training": "docs/source/en/training.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "4.0.0",
+                "5.0.0"
+            ],
+            "relatedLibraries": [
+                "/huggingface/diffusers",
+                "/huggingface/accelerate"
+            ]
+        }
+    },
+    {
+        "id": "/huggingface/diffusers",
+        "name": "HuggingFace Diffusers",
+        "aliases": [
+            "diffusers",
+            "hf diffusers",
+            "stable diffusion sdk"
+        ],
+        "category": "ml-framework",
+        "language": "python",
+        "repository": "https://github.com/huggingface/diffusers",
+        "docsPath": "docs/source/en/",
+        "changelogPath": "",
+        "versionSource": "pypi:diffusers",
+        "docSections": {
+            "quickstart": "docs/source/en/quicktour.md",
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "0.20.0"
+            ],
+            "relatedLibraries": [
+                "/huggingface/transformers"
+            ]
+        }
+    },
+    {
+        "id": "/huggingface/accelerate",
+        "name": "HuggingFace Accelerate",
+        "aliases": [
+            "accelerate",
+            "hf accelerate"
+        ],
+        "category": "ml-framework",
+        "language": "python",
+        "repository": "https://github.com/huggingface/accelerate",
+        "docsPath": "docs/source/",
+        "changelogPath": "CHANGELOG.md",
+        "versionSource": "pypi:accelerate",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "relatedLibraries": [
+                "/huggingface/transformers"
+            ]
+        }
+    },
+    {
+        "id": "/huggingface/peft",
+        "name": "HuggingFace PEFT",
+        "aliases": [
+            "peft",
+            "hf peft",
+            "lora",
+            "parameter efficient"
+        ],
+        "category": "ml-framework",
+        "language": "python",
+        "repository": "https://github.com/huggingface/peft",
+        "docsPath": "docs/source/",
+        "changelogPath": "CHANGELOG.md",
+        "versionSource": "pypi:peft",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "relatedLibraries": [
+                "/huggingface/transformers"
+            ]
+        }
+    },
+    {
+        "id": "/vllm-project/vllm",
+        "name": "vLLM",
+        "aliases": [
+            "vllm",
+            "vllm serve",
+            "vllm engine"
+        ],
+        "category": "inference-engine",
+        "language": "python",
+        "repository": "https://github.com/vllm-project/vllm",
+        "docsPath": "docs/",
+        "changelogPath": "",
+        "versionSource": "pypi:vllm",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "0.3.0",
+                "0.4.0",
+                "0.5.0"
+            ],
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/ggerganov/llama.cpp",
+        "name": "llama.cpp",
+        "aliases": [
+            "llama-cpp",
+            "llamacpp",
+            "llama cpp",
+            "ggml"
+        ],
+        "category": "inference-engine",
+        "language": "cpp",
+        "repository": "https://github.com/ggerganov/llama.cpp",
+        "docsPath": "",
+        "changelogPath": "",
+        "versionSource": "github:ggerganov/llama.cpp",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/ollama/ollama",
+        "name": "Ollama",
+        "aliases": [
+            "ollama",
+            "ollama api"
+        ],
+        "category": "inference-engine",
+        "language": "go",
+        "repository": "https://github.com/ollama/ollama",
+        "docsPath": "docs/",
+        "changelogPath": "",
+        "versionSource": "github:ollama/ollama",
+        "docSections": {
+            "readme": "README.md",
+            "api": "docs/api.md",
+            "modelfile": "docs/modelfile.md"
+        },
+        "metadata": {
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/pytorch/pytorch",
+        "name": "PyTorch",
+        "aliases": [
+            "pytorch",
+            "torch",
+            "torch.nn"
+        ],
+        "category": "ml-framework",
+        "language": "python",
+        "repository": "https://github.com/pytorch/pytorch",
+        "docsPath": "",
+        "changelogPath": "",
+        "versionSource": "pypi:torch",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "2.0.0"
+            ],
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/google/generative-ai-python",
+        "name": "Google Generative AI Python",
+        "aliases": [
+            "google-genai",
+            "gemini sdk",
+            "google ai",
+            "google generative ai",
+            "genai"
+        ],
+        "category": "llm-provider-sdk",
+        "language": "python",
+        "repository": "https://github.com/google-gemini/generative-ai-python",
+        "docsPath": "",
+        "changelogPath": "CHANGELOG.md",
+        "versionSource": "pypi:google-generativeai",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "0.3.0"
+            ],
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/google/generative-ai-js",
+        "name": "Google Generative AI JS",
+        "aliases": [
+            "google-genai-js",
+            "gemini js",
+            "google ai js"
+        ],
+        "category": "llm-provider-sdk",
+        "language": "typescript",
+        "repository": "https://github.com/google-gemini/generative-ai-js",
+        "docsPath": "",
+        "changelogPath": "CHANGELOG.md",
+        "versionSource": "npm:@google/generative-ai",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "relatedLibraries": [
+                "/google/generative-ai-python"
+            ]
+        }
+    },
+    {
+        "id": "/vercel/ai",
+        "name": "Vercel AI SDK",
+        "aliases": [
+            "ai sdk",
+            "vercel ai",
+            "ai-sdk",
+            "vercel ai sdk"
+        ],
+        "category": "agent-framework",
+        "language": "typescript",
+        "repository": "https://github.com/vercel/ai",
+        "docsPath": "",
+        "changelogPath": "packages/ai/CHANGELOG.md",
+        "versionSource": "npm:ai",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "3.0.0",
+                "4.0.0"
+            ],
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/run-llama/llama_index",
+        "name": "LlamaIndex",
+        "aliases": [
+            "llamaindex",
+            "llama index",
+            "llama-index",
+            "gpt index"
+        ],
+        "category": "agent-framework",
+        "language": "python",
+        "repository": "https://github.com/run-llama/llama_index",
+        "docsPath": "docs/",
+        "changelogPath": "CHANGELOG.md",
+        "versionSource": "pypi:llama-index",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "0.10.0"
+            ],
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/crewai/crewai",
+        "name": "CrewAI",
+        "aliases": [
+            "crewai",
+            "crew ai",
+            "crew-ai"
+        ],
+        "category": "agent-framework",
+        "language": "python",
+        "repository": "https://github.com/crewAIInc/crewAI",
+        "docsPath": "docs/",
+        "changelogPath": "",
+        "versionSource": "pypi:crewai",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/mistralai/mistral-python",
+        "name": "Mistral AI Python",
+        "aliases": [
+            "mistral",
+            "mistralai",
+            "mistral sdk",
+            "mistral python"
+        ],
+        "category": "llm-provider-sdk",
+        "language": "python",
+        "repository": "https://github.com/mistralai/client-python",
+        "docsPath": "",
+        "changelogPath": "CHANGELOG.md",
+        "versionSource": "pypi:mistralai",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "1.0.0"
+            ],
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/cohere-ai/cohere-python",
+        "name": "Cohere Python SDK",
+        "aliases": [
+            "cohere",
+            "cohere-python",
+            "cohere sdk"
+        ],
+        "category": "llm-provider-sdk",
+        "language": "python",
+        "repository": "https://github.com/cohere-ai/cohere-python",
+        "docsPath": "",
+        "changelogPath": "CHANGELOG.md",
+        "versionSource": "pypi:cohere",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "5.0.0"
+            ],
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/chroma-core/chroma",
+        "name": "ChromaDB",
+        "aliases": [
+            "chroma",
+            "chromadb",
+            "chroma-db"
+        ],
+        "category": "vector-database",
+        "language": "python",
+        "repository": "https://github.com/chroma-core/chroma",
+        "docsPath": "",
+        "changelogPath": "CHANGELOG.md",
+        "versionSource": "pypi:chromadb",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "0.4.0",
+                "0.5.0"
+            ],
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/qdrant/qdrant-client",
+        "name": "Qdrant Python Client",
+        "aliases": [
+            "qdrant",
+            "qdrant-client",
+            "qdrant python"
+        ],
+        "category": "vector-database",
+        "language": "python",
+        "repository": "https://github.com/qdrant/qdrant-client",
+        "docsPath": "",
+        "changelogPath": "CHANGELOG.md",
+        "versionSource": "pypi:qdrant-client",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/pinecone-io/pinecone-python-client",
+        "name": "Pinecone Python SDK",
+        "aliases": [
+            "pinecone",
+            "pinecone-client",
+            "pinecone sdk"
+        ],
+        "category": "vector-database",
+        "language": "python",
+        "repository": "https://github.com/pinecone-io/pinecone-python-client",
+        "docsPath": "",
+        "changelogPath": "CHANGELOG.md",
+        "versionSource": "pypi:pinecone-client",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "3.0.0"
+            ],
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/weaviate/weaviate-python-client",
+        "name": "Weaviate Python Client",
+        "aliases": [
+            "weaviate",
+            "weaviate-client",
+            "weaviate python"
+        ],
+        "category": "vector-database",
+        "language": "python",
+        "repository": "https://github.com/weaviate/weaviate-python-client",
+        "docsPath": "",
+        "changelogPath": "CHANGELOG.md",
+        "versionSource": "pypi:weaviate-client",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "4.0.0"
+            ],
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/guidance-ai/guidance",
+        "name": "Guidance",
+        "aliases": [
+            "guidance",
+            "guidance-ai",
+            "guidance llm"
+        ],
+        "category": "prompt-engineering",
+        "language": "python",
+        "repository": "https://github.com/guidance-ai/guidance",
+        "docsPath": "",
+        "changelogPath": "CHANGELOG.md",
+        "versionSource": "pypi:guidance",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "0.1.0"
+            ],
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/instructor-ai/instructor",
+        "name": "Instructor",
+        "aliases": [
+            "instructor",
+            "instructor-ai",
+            "structured output"
+        ],
+        "category": "prompt-engineering",
+        "language": "python",
+        "repository": "https://github.com/instructor-ai/instructor",
+        "docsPath": "docs/",
+        "changelogPath": "CHANGELOG.md",
+        "versionSource": "pypi:instructor",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "1.0.0"
+            ],
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/pydantic/pydantic",
+        "name": "Pydantic",
+        "aliases": [
+            "pydantic",
+            "pydantic v2",
+            "basemodel"
+        ],
+        "category": "ml-framework",
+        "language": "python",
+        "repository": "https://github.com/pydantic/pydantic",
+        "docsPath": "",
+        "changelogPath": "HISTORY.md",
+        "versionSource": "pypi:pydantic",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "2.0.0"
+            ],
+            "relatedLibraries": [
+                "/pydantic/pydantic-ai"
+            ]
+        }
+    },
+    {
+        "id": "/pydantic/pydantic-ai",
+        "name": "Pydantic AI",
+        "aliases": [
+            "pydantic-ai",
+            "pydanticai"
+        ],
+        "category": "agent-framework",
+        "language": "python",
+        "repository": "https://github.com/pydantic/pydantic-ai",
+        "docsPath": "docs/",
+        "changelogPath": "CHANGELOG.md",
+        "versionSource": "pypi:pydantic-ai",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "relatedLibraries": [
+                "/pydantic/pydantic"
+            ]
+        }
+    },
+    {
+        "id": "/microsoft/autogen",
+        "name": "AutoGen",
+        "aliases": [
+            "autogen",
+            "auto-gen",
+            "microsoft autogen",
+            "ag2"
+        ],
+        "category": "agent-framework",
+        "language": "python",
+        "repository": "https://github.com/microsoft/autogen",
+        "docsPath": "",
+        "changelogPath": "",
+        "versionSource": "pypi:autogen-agentchat",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "0.4.0"
+            ],
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/letta-ai/letta",
+        "name": "Letta (MemGPT)",
+        "aliases": [
+            "letta",
+            "memgpt",
+            "mem-gpt"
+        ],
+        "category": "agent-framework",
+        "language": "python",
+        "repository": "https://github.com/letta-ai/letta",
+        "docsPath": "",
+        "changelogPath": "CHANGELOG.md",
+        "versionSource": "pypi:letta",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/facebook/react",
+        "name": "React",
+        "aliases": [
+            "react",
+            "reactjs",
+            "react.js"
+        ],
+        "category": "web-framework",
+        "language": "typescript",
+        "repository": "https://github.com/facebook/react",
+        "docsPath": "",
+        "changelogPath": "CHANGELOG.md",
+        "versionSource": "npm:react",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "17.0.0",
+                "18.0.0",
+                "19.0.0"
+            ],
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/vercel/next.js",
+        "name": "Next.js",
+        "aliases": [
+            "nextjs",
+            "next.js",
+            "next"
+        ],
+        "category": "web-framework",
+        "language": "typescript",
+        "repository": "https://github.com/vercel/next.js",
+        "docsPath": "",
+        "changelogPath": "",
+        "versionSource": "npm:next",
+        "docSections": {
+            "readme": "readme.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "13.0.0",
+                "14.0.0",
+                "15.0.0"
+            ],
+            "relatedLibraries": [
+                "/facebook/react"
+            ]
+        }
+    },
+    {
+        "id": "/vuejs/core",
+        "name": "Vue",
+        "aliases": [
+            "vue",
+            "vuejs",
+            "vue.js",
+            "vue3"
+        ],
+        "category": "web-framework",
+        "language": "typescript",
+        "repository": "https://github.com/vuejs/core",
+        "docsPath": "",
+        "changelogPath": "CHANGELOG.md",
+        "versionSource": "npm:vue",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "3.0.0",
+                "3.3.0"
+            ],
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/nuxt/nuxt",
+        "name": "Nuxt",
+        "aliases": [
+            "nuxt",
+            "nuxtjs",
+            "nuxt3"
+        ],
+        "category": "web-framework",
+        "language": "typescript",
+        "repository": "https://github.com/nuxt/nuxt",
+        "docsPath": "",
+        "changelogPath": "",
+        "versionSource": "npm:nuxt",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "3.0.0"
+            ],
+            "relatedLibraries": [
+                "/vuejs/core"
+            ]
+        }
+    },
+    {
+        "id": "/sveltejs/svelte",
+        "name": "Svelte",
+        "aliases": [
+            "svelte",
+            "sveltejs"
+        ],
+        "category": "web-framework",
+        "language": "typescript",
+        "repository": "https://github.com/sveltejs/svelte",
+        "docsPath": "",
+        "changelogPath": "packages/svelte/CHANGELOG.md",
+        "versionSource": "npm:svelte",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "4.0.0",
+                "5.0.0"
+            ],
+            "monorepo": true,
+            "packageRoot": "packages/",
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/sveltejs/kit",
+        "name": "SvelteKit",
+        "aliases": [
+            "sveltekit",
+            "svelte-kit"
+        ],
+        "category": "web-framework",
+        "language": "typescript",
+        "repository": "https://github.com/sveltejs/kit",
+        "docsPath": "",
+        "changelogPath": "packages/kit/CHANGELOG.md",
+        "versionSource": "npm:@sveltejs/kit",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "1.0.0",
+                "2.0.0"
+            ],
+            "monorepo": true,
+            "packageRoot": "packages/",
+            "relatedLibraries": [
+                "/sveltejs/svelte"
+            ]
+        }
+    },
+    {
+        "id": "/expressjs/express",
+        "name": "Express",
+        "aliases": [
+            "express",
+            "expressjs",
+            "express.js"
+        ],
+        "category": "web-framework",
+        "language": "typescript",
+        "repository": "https://github.com/expressjs/express",
+        "docsPath": "",
+        "changelogPath": "History.md",
+        "versionSource": "npm:express",
+        "docSections": {
+            "readme": "Readme.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "4.0.0",
+                "5.0.0"
+            ],
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/fastify/fastify",
+        "name": "Fastify",
+        "aliases": [
+            "fastify"
+        ],
+        "category": "web-framework",
+        "language": "typescript",
+        "repository": "https://github.com/fastify/fastify",
+        "docsPath": "docs/",
+        "changelogPath": "",
+        "versionSource": "npm:fastify",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "4.0.0",
+                "5.0.0"
+            ],
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/honojs/hono",
+        "name": "Hono",
+        "aliases": [
+            "hono",
+            "honojs"
+        ],
+        "category": "web-framework",
+        "language": "typescript",
+        "repository": "https://github.com/honojs/hono",
+        "docsPath": "",
+        "changelogPath": "",
+        "versionSource": "npm:hono",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "4.0.0"
+            ],
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/prisma/prisma",
+        "name": "Prisma",
+        "aliases": [
+            "prisma",
+            "prisma orm",
+            "prisma client"
+        ],
+        "category": "database-orm",
+        "language": "typescript",
+        "repository": "https://github.com/prisma/prisma",
+        "docsPath": "",
+        "changelogPath": "",
+        "versionSource": "npm:prisma",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "4.0.0",
+                "5.0.0",
+                "6.0.0"
+            ],
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/drizzle-team/drizzle-orm",
+        "name": "Drizzle ORM",
+        "aliases": [
+            "drizzle",
+            "drizzle-orm",
+            "drizzle orm"
+        ],
+        "category": "database-orm",
+        "language": "typescript",
+        "repository": "https://github.com/drizzle-team/drizzle-orm",
+        "docsPath": "",
+        "changelogPath": "changelogs/drizzle-orm/CHANGELOG.md",
+        "versionSource": "npm:drizzle-orm",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/typeorm/typeorm",
+        "name": "TypeORM",
+        "aliases": [
+            "typeorm",
+            "type-orm"
+        ],
+        "category": "database-orm",
+        "language": "typescript",
+        "repository": "https://github.com/typeorm/typeorm",
+        "docsPath": "",
+        "changelogPath": "CHANGELOG.md",
+        "versionSource": "npm:typeorm",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "0.3.0"
+            ],
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/automattic/mongoose",
+        "name": "Mongoose",
+        "aliases": [
+            "mongoose",
+            "mongodb orm"
+        ],
+        "category": "database-orm",
+        "language": "typescript",
+        "repository": "https://github.com/Automattic/mongoose",
+        "docsPath": "",
+        "changelogPath": "CHANGELOG.md",
+        "versionSource": "npm:mongoose",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "7.0.0",
+                "8.0.0"
+            ],
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/trpc/trpc",
+        "name": "tRPC",
+        "aliases": [
+            "trpc",
+            "t-rpc"
+        ],
+        "category": "api-framework",
+        "language": "typescript",
+        "repository": "https://github.com/trpc/trpc",
+        "docsPath": "",
+        "changelogPath": "",
+        "versionSource": "npm:@trpc/server",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "10.0.0",
+                "11.0.0"
+            ],
+            "monorepo": true,
+            "packageRoot": "packages/",
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/colinhacks/zod",
+        "name": "Zod",
+        "aliases": [
+            "zod",
+            "zod validation",
+            "zod schema"
+        ],
+        "category": "api-framework",
+        "language": "typescript",
+        "repository": "https://github.com/colinhacks/zod",
+        "docsPath": "",
+        "changelogPath": "CHANGELOG.md",
+        "versionSource": "npm:zod",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "3.0.0",
+                "4.0.0"
+            ],
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/apollographql/apollo-server",
+        "name": "Apollo Server",
+        "aliases": [
+            "apollo",
+            "apollo-server",
+            "graphql server",
+            "apollo graphql"
+        ],
+        "category": "api-framework",
+        "language": "typescript",
+        "repository": "https://github.com/apollographql/apollo-server",
+        "docsPath": "",
+        "changelogPath": "CHANGELOG.md",
+        "versionSource": "npm:@apollo/server",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "3.0.0",
+                "4.0.0"
+            ],
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/vitest-dev/vitest",
+        "name": "Vitest",
+        "aliases": [
+            "vitest",
+            "vite test"
+        ],
+        "category": "testing",
+        "language": "typescript",
+        "repository": "https://github.com/vitest-dev/vitest",
+        "docsPath": "",
+        "changelogPath": "packages/vitest/CHANGELOG.md",
+        "versionSource": "npm:vitest",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "1.0.0",
+                "2.0.0",
+                "3.0.0"
+            ],
+            "monorepo": true,
+            "packageRoot": "packages/",
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/microsoft/playwright",
+        "name": "Playwright",
+        "aliases": [
+            "playwright",
+            "playwright test"
+        ],
+        "category": "testing",
+        "language": "typescript",
+        "repository": "https://github.com/microsoft/playwright",
+        "docsPath": "docs/",
+        "changelogPath": "",
+        "versionSource": "npm:playwright",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "1.40.0"
+            ],
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/supabase/supabase-js",
+        "name": "Supabase JS",
+        "aliases": [
+            "supabase",
+            "supabase-js",
+            "supabase client"
+        ],
+        "category": "infrastructure",
+        "language": "typescript",
+        "repository": "https://github.com/supabase/supabase-js",
+        "docsPath": "",
+        "changelogPath": "",
+        "versionSource": "npm:@supabase/supabase-js",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "2.0.0"
+            ],
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/firebase/firebase-js-sdk",
+        "name": "Firebase JS",
+        "aliases": [
+            "firebase",
+            "firebase-js",
+            "firebase sdk"
+        ],
+        "category": "infrastructure",
+        "language": "typescript",
+        "repository": "https://github.com/firebase/firebase-js-sdk",
+        "docsPath": "",
+        "changelogPath": "",
+        "versionSource": "npm:firebase",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "9.0.0",
+                "10.0.0",
+                "11.0.0"
+            ],
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/replicate/replicate-python",
+        "name": "Replicate Python",
+        "aliases": [
+            "replicate",
+            "replicate sdk"
+        ],
+        "category": "llm-provider-sdk",
+        "language": "python",
+        "repository": "https://github.com/replicate/replicate-python",
+        "docsPath": "",
+        "changelogPath": "CHANGELOG.md",
+        "versionSource": "pypi:replicate",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "1.0.0"
+            ],
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/groq/groq-python",
+        "name": "Groq Python SDK",
+        "aliases": [
+            "groq",
+            "groq sdk",
+            "groq python"
+        ],
+        "category": "llm-provider-sdk",
+        "language": "python",
+        "repository": "https://github.com/groq/groq-python",
+        "docsPath": "",
+        "changelogPath": "CHANGELOG.md",
+        "versionSource": "pypi:groq",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/deepseek-ai/deepseek-coder",
+        "name": "DeepSeek",
+        "aliases": [
+            "deepseek",
+            "deepseek-coder",
+            "deepseek ai"
+        ],
+        "category": "llm-provider-sdk",
+        "language": "python",
+        "repository": "https://github.com/deepseek-ai/DeepSeek-Coder",
+        "docsPath": "",
+        "changelogPath": "",
+        "versionSource": "pypi:deepseek-ai",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/tailwindlabs/tailwindcss",
+        "name": "Tailwind CSS",
+        "aliases": [
+            "tailwind",
+            "tailwindcss",
+            "tailwind css"
+        ],
+        "category": "web-framework",
+        "language": "typescript",
+        "repository": "https://github.com/tailwindlabs/tailwindcss",
+        "docsPath": "",
+        "changelogPath": "CHANGELOG.md",
+        "versionSource": "npm:tailwindcss",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "breakingVersions": [
+                "3.0.0",
+                "4.0.0"
+            ],
+            "relatedLibraries": []
+        }
+    },
+    {
+        "id": "/shadcn-ui/ui",
+        "name": "shadcn/ui",
+        "aliases": [
+            "shadcn",
+            "shadcn-ui",
+            "shadcn ui"
+        ],
+        "category": "web-framework",
+        "language": "typescript",
+        "repository": "https://github.com/shadcn-ui/ui",
+        "docsPath": "",
+        "changelogPath": "",
+        "versionSource": "npm:shadcn",
+        "docSections": {
+            "readme": "README.md"
+        },
+        "metadata": {
+            "relatedLibraries": [
+                "/tailwindlabs/tailwindcss",
+                "/facebook/react"
+            ]
+        }
+    }
+]

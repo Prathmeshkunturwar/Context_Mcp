@@ -1,0 +1,27 @@
+# Dev files
+.claude/
+.claude-flow/
+.cache/
+.env
+.env.*
+!.env.example
+
+# Source (we publish build/ only)
+src/
+tests/
+scripts/
+*.test.ts
+test-*.ts
+*-output.txt
+
+# Config
+.github/
+tsconfig.json
+jest.config.js
+error.txt
+validation-output.txt
+test-script.ts
+test-vector.ts
+
+# Docs (keep examples/ and docs/ for npm)
+.mcp.json

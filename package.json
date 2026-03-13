@@ -1,0 +1,94 @@
+{
+  "name": "ai-context-mcp",
+  "version": "1.0.0",
+  "description": "MCP server that gives LLMs live, version-pinned documentation from 57+ AI/ML libraries. Eliminates hallucinations about APIs.",
+  "main": "build/server.js",
+  "bin": {
+    "ai-context-mcp": "build/server.js"
+  },
+  "files": [
+    "build/",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "examples/",
+    "assets/"
+  ],
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').copyFileSync('src/registry/libraries.json','build/registry/libraries.json')\"",
+    "start": "node build/server.js",
+    "start:http": "TRANSPORT=http node build/server.js",
+    "dev": "ts-node src/server.ts",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "validate-registry": "ts-node src/registry/schema.ts",
+    "add-library": "ts-node scripts/add-library.ts",
+    "lint": "tsc --noEmit",
+    "clean": "rm -rf build",
+    "prepublishOnly": "npm run clean && npm run build && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prathmeshkunturwar/Context_Mcp.git"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "llm",
+    "ai",
+    "documentation",
+    "langchain",
+    "openai",
+    "anthropic",
+    "claude",
+    "context",
+    "version-pinning",
+    "changelog",
+    "hallucination",
+    "ai-tools",
+    "developer-tools",
+    "llm-tools",
+    "cursor",
+    "claude-code",
+    "pytorch",
+    "huggingface",
+    "langraph",
+    "llamaindex",
+    "crewai",
+    "rag",
+    "vector-database",
+    "semantic-search",
+    "typescript"
+  ],
+  "author": "Prathmesh Kunturwar <prathmeshkunturwar@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Prathmeshkunturwar/Context_Mcp/issues"
+  },
+  "homepage": "https://github.com/Prathmeshkunturwar/Context_Mcp#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.0",
+    "@xenova/transformers": "^2.17.2",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "express": "^5.2.1",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^22.13.4",
+    "@types/sqlite3": "^3.1.11",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "type": "commonjs"
+}

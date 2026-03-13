@@ -1,0 +1,75 @@
+name: Library Request
+description: Request support for a new library
+title: '[Library]: Add support for '
+labels: ['library-request']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Request adding a new library to the registry.
+
+  - type: input
+    id: name
+    attributes:
+      label: Library Name
+      description: What is the library called?
+      placeholder: 'e.g., Transformers.js'
+    validations:
+      required: true
+
+  - type: input
+    id: repo
+    attributes:
+      label: GitHub Repository
+      description: Link to the GitHub repository
+      placeholder: 'https://github.com/owner/repo'
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Which category does this library belong to?
+      options:
+        - llm-provider-sdk
+        - agent-framework
+        - ml-framework
+        - inference-engine
+        - vector-database
+        - prompt-engineering
+        - web-framework
+        - database-orm
+        - api-validation
+        - testing
+        - infrastructure
+        - other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: Primary Language
+      options:
+        - python
+        - javascript
+        - typescript
+        - rust
+        - go
+        - other
+    validations:
+      required: true
+
+  - type: input
+    id: docs
+    attributes:
+      label: Documentation Path
+      description: Path to documentation folder in the repo (optional)
+      placeholder: 'e.g., docs/ or Documentation/'
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Why this library?
+      description: Briefly explain why this library should be added
