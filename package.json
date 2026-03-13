@@ -27,7 +27,7 @@
     "validate-registry": "ts-node src/registry/schema.ts",
     "add-library": "ts-node scripts/add-library.ts",
     "lint": "tsc --noEmit",
-    "clean": "rm -rf build",
+    "clean": "if exist build rmdir /s /q build",
     "prepublishOnly": "npm run clean && npm run build && npm test"
   },
   "repository": {
